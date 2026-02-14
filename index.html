@@ -1,45 +1,33 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover' />
-    <meta charset='utf-8'>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Flappy Bird - .GEARS</title>
     <style>
-        body {
-            background-color: #000;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
             overflow: hidden;
         }
-        #application-canvas {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
+        #gameCanvas {
+            background: linear-gradient(180deg, #4EC0CA 0%, #4EC0CA 60%, #DED895 60%, #DED895 100%);
+            border: 4px solid #543847;
+            border-radius: 8px;
+            cursor: pointer;
         }
     </style>
-    <title>Flappy Bird</title>
-    <script src="playcanvas-stable.min.js"></script>
-    <script src="__game-scripts.js"></script>
-    <script>
-        // 전역 설정 값
-        window.SCENE_PATH = "assets/952291.json";
-        window.CONTEXT_OPTIONS = {"antialias": false, "alpha": true, "preserveDrawingBuffer": false, "preferWebGl2": false, "powerPreference": "default", "xrCompatible": true, "stencil": true};
-        window.SCRIPTS = [32749270, 32749276, 32749262, 32749259, 32749225, 32749254, 32749280, 32749244, 32749264, 32749245, 32749231, 32749257, 32749278, 32749274, 32749213, 32749272, 32749212, 32749263, 32749249];
-        window.CONFIG_FILENAME = "config.json";
-        window.INPUT_SETTINGS = {"useKeyboard": true, "useMouse": true, "useGamepads": false, "useTouch": true};
-        window.PRELOAD_MODULES = [];
-        window.ASSET_PREFIX = "";
-        window.SCRIPT_PREFIX = "";
-    </script>
 </head>
 <body>
-    <script src="__start__.js"></script>
-    <script src="__loading__.js"></script>
+    <canvas id="gameCanvas" width="320" height="480"></canvas>
+    <script src="game.js"></script>
 </body>
 </html>
