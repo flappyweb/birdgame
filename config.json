@@ -1,0 +1,3373 @@
+{
+  "application_properties": {
+    "antiAlias": false,
+    "fillMode": "FILL_WINDOW",
+    "resolutionMode": "AUTO",
+    "height": 1536,
+    "width": 2048,
+    "use3dPhysics": false,
+    "preferWebGl2": false,
+    "preserveDrawingBuffer": false,
+    "scripts": [
+      32749270,
+      32749276,
+      32749262,
+      32749259,
+      32749225,
+      32749254,
+      32749280,
+      32749244,
+      32749264,
+      32749245,
+      32749231,
+      32749257,
+      32749278,
+      32749274,
+      32749213,
+      32749272,
+      32749212,
+      32749263,
+      32749249
+    ],
+    "transparentCanvas": true,
+    "useDevicePixelRatio": false,
+    "useLegacyScripts": false,
+    "vr": false,
+    "loadingScreenScript": null,
+    "batchGroups": [],
+    "layers": {
+      "0": {
+        "name": "World",
+        "opaqueSortMode": 2,
+        "transparentSortMode": 3
+      },
+      "1": {
+        "name": "Depth",
+        "opaqueSortMode": 2,
+        "transparentSortMode": 3
+      },
+      "2": {
+        "name": "Skybox",
+        "opaqueSortMode": 0,
+        "transparentSortMode": 3
+      },
+      "3": {
+        "name": "Immediate",
+        "opaqueSortMode": 0,
+        "transparentSortMode": 3
+      },
+      "4": {
+        "name": "UI",
+        "opaqueSortMode": 1,
+        "transparentSortMode": 1
+      },
+      "1000": {
+        "name": "Sprite",
+        "opaqueSortMode": 1,
+        "transparentSortMode": 1
+      }
+    },
+    "layerOrder": [
+      {
+        "layer": 0,
+        "transparent": false,
+        "enabled": true
+      },
+      {
+        "layer": 1,
+        "transparent": false,
+        "enabled": true
+      },
+      {
+        "layer": 2,
+        "transparent": false,
+        "enabled": true
+      },
+      {
+        "layer": 0,
+        "transparent": true,
+        "enabled": true
+      },
+      {
+        "layer": 3,
+        "transparent": false,
+        "enabled": true
+      },
+      {
+        "layer": 3,
+        "transparent": true,
+        "enabled": true
+      },
+      {
+        "layer": 4,
+        "transparent": true,
+        "enabled": true
+      },
+      {
+        "layer": 1000,
+        "transparent": true,
+        "enabled": true
+      }
+    ],
+    "useKeyboard": true,
+    "useMouse": true,
+    "useTouch": true,
+    "useGamepads": false,
+    "i18nAssets": [],
+    "externalScripts": [],
+    "useLegacyAmmoPhysics": true,
+    "powerPreference": "default",
+    "maxAssetRetries": 0,
+    "libraries": []
+  },
+  "scenes": [
+    {
+      "name": "Game",
+      "url": "assets/952291.json"
+    }
+  ],
+  "assets": {
+    "32749208": {
+      "tags": [],
+      "name": "Big 2",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "22"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749208"
+    },
+    "32749209": {
+      "tags": [],
+      "name": "Gears",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "38"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749209"
+    },
+    "32749210": {
+      "tags": [],
+      "name": "Scoreboard",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "3"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749210"
+    },
+    "32749212": {
+      "tags": [],
+      "name": "input.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "input": {
+            "attributesOrder": [],
+            "attributes": {}
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749212"
+    },
+    "32749213": {
+      "data": {
+        "scripts": {
+          "fade": {
+            "attributesOrder": [
+              "event",
+              "type",
+              "duration",
+              "delay"
+            ],
+            "attributes": {
+              "event": {
+                "type": "string"
+              },
+              "type": {
+                "type": "number",
+                "enum": {
+                  "order": [
+                    "In",
+                    "Out",
+                    "InOut"
+                  ],
+                  "options": {
+                    "In": 0,
+                    "Out": 1,
+                    "InOut": 2
+                  }
+                }
+              },
+              "duration": {
+                "type": "number",
+                "default": 1000
+              },
+              "delay": {
+                "type": "number",
+                "default": 0
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "meta": null,
+      "name": "fade.js",
+      "preload": true,
+      "region": "eu-west-1",
+      "revision": 1,
+      "tags": [],
+      "type": "script",
+      "i18n": {},
+      "id": "32749213"
+    },
+    "32749214": {
+      "tags": [],
+      "name": "Medal Gold",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "34"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749214"
+    },
+    "32749215": {
+      "tags": [],
+      "name": "New Material",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "ambient": [
+          0,
+          0,
+          0
+        ],
+        "ambientTint": false,
+        "aoMap": null,
+        "aoMapChannel": "r",
+        "aoMapUv": 0,
+        "aoMapTiling": [
+          1,
+          1
+        ],
+        "aoMapOffset": [
+          0,
+          0
+        ],
+        "diffuse": [
+          1,
+          1,
+          1
+        ],
+        "diffuseMap": null,
+        "diffuseMapChannel": "rgb",
+        "diffuseMapUv": 0,
+        "diffuseMapTiling": [
+          1,
+          1
+        ],
+        "diffuseMapOffset": [
+          0,
+          0
+        ],
+        "specular": [
+          0.23,
+          0.23,
+          0.23
+        ],
+        "specularMap": null,
+        "specularMapChannel": "rgb",
+        "specularMapUv": 0,
+        "specularMapTiling": [
+          1,
+          1
+        ],
+        "specularMapOffset": [
+          0,
+          0
+        ],
+        "specularAntialias": true,
+        "occludeSpecular": 1,
+        "useMetalness": false,
+        "metalness": 1,
+        "metalnessMap": null,
+        "metalnessMapChannel": "r",
+        "metalnessMapUv": 0,
+        "metalnessMapTiling": [
+          1,
+          1
+        ],
+        "metalnessMapOffset": [
+          0,
+          0
+        ],
+        "conserveEnergy": true,
+        "shininess": 32,
+        "glossMap": null,
+        "glossMapChannel": "r",
+        "glossMapUv": 0,
+        "glossMapTiling": [
+          1,
+          1
+        ],
+        "glossMapOffset": [
+          0,
+          0
+        ],
+        "fresnelModel": 0,
+        "emissive": [
+          0,
+          0,
+          0
+        ],
+        "emissiveMap": 32749267,
+        "emissiveMapChannel": "rgb",
+        "emissiveMapUv": 0,
+        "emissiveMapTiling": [
+          1,
+          1
+        ],
+        "emissiveMapOffset": [
+          0,
+          0
+        ],
+        "emissiveIntensity": 1,
+        "normalMap": null,
+        "normalMapTiling": [
+          1,
+          1
+        ],
+        "normalMapOffset": [
+          0,
+          0
+        ],
+        "normalMapUv": 0,
+        "bumpMapFactor": 1,
+        "heightMap": null,
+        "heightMapChannel": "r",
+        "heightMapUv": 0,
+        "heightMapTiling": [
+          1,
+          1
+        ],
+        "heightMapOffset": [
+          0,
+          0
+        ],
+        "heightMapFactor": 1,
+        "alphaToCoverage": false,
+        "alphaTest": 0,
+        "opacity": 1,
+        "opacityMap": null,
+        "opacityMapChannel": "r",
+        "opacityMapUv": 0,
+        "opacityMapTiling": [
+          1,
+          1
+        ],
+        "opacityMapOffset": [
+          0,
+          0
+        ],
+        "reflectivity": 1,
+        "refraction": 0,
+        "refractionIndex": 0.6666666666666666,
+        "sphereMap": null,
+        "cubeMap": null,
+        "cubeMapProjection": 0,
+        "cubeMapProjectionBox": {
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "halfExtents": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "lightMap": null,
+        "lightMapChannel": "rgb",
+        "lightMapUv": 1,
+        "lightMapTiling": [
+          1,
+          1
+        ],
+        "lightMapOffset": [
+          0,
+          0
+        ],
+        "depthTest": true,
+        "depthWrite": true,
+        "cull": 1,
+        "blendType": 3,
+        "shader": "blinn",
+        "useFog": true,
+        "useLighting": true,
+        "useSkybox": true,
+        "useGammaTonemap": true,
+        "aoMapVertexColor": false,
+        "diffuseMapVertexColor": false,
+        "emissiveMapVertexColor": false,
+        "specularMapVertexColor": false,
+        "metalnessMapVertexColor": false,
+        "opacityMapVertexColor": false,
+        "glossMapVertexColor": false,
+        "lightMapVertexColor": false,
+        "diffuseMapTint": false,
+        "specularMapTint": false,
+        "emissiveMapTint": false,
+        "metalnessMapTint": false,
+        "opacityFadesSpecular": true,
+        "alphaFade": 1,
+        "clearCoat": 0,
+        "clearCoatMap": null,
+        "clearCoatMapChannel": "r",
+        "clearCoatMapUv": 0,
+        "clearCoatMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatMapOffset": [
+          0,
+          0
+        ],
+        "clearCoatVertexColor": false,
+        "clearCoatVertexColorChannel": "r",
+        "clearCoatGlossiness": 1,
+        "clearCoatGlossMap": null,
+        "clearCoatGlossMapChannel": "r",
+        "clearCoatGlossMapUv": 0,
+        "clearCoatGlossMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatGlossMapOffset": [
+          0,
+          0
+        ],
+        "clearCoatGlossVertexColor": false,
+        "clearCoatGlossVertexColorChannel": "r",
+        "clearCoatBumpiness": 1,
+        "clearCoatNormalMap": null,
+        "clearCoatNormalMapUv": 0,
+        "clearCoatNormalMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatNormalMapOffset": [
+          0,
+          0
+        ]
+      },
+      "type": "material",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749215"
+    },
+    "32749216": {
+      "tags": [],
+      "name": "Medal Silver",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "33"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749216"
+    },
+    "32749217": {
+      "tags": [],
+      "name": "Background",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "1"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749217"
+    },
+    "32749218": {
+      "data": null,
+      "file": {
+        "filename": "sfx_hit.mp3",
+        "size": 9448,
+        "hash": "530f102ee30743cd62720544290064ae",
+        "url": "assets/files/assets/32749218/1/sfx_hit.mp3"
+      },
+      "meta": null,
+      "name": "sfx_hit.mp3",
+      "preload": false,
+      "region": "eu-west-1",
+      "revision": 1,
+      "tags": [],
+      "type": "audio",
+      "i18n": {},
+      "id": "32749218"
+    },
+    "32749219": {
+      "tags": [],
+      "name": "Big 5",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "25"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749219"
+    },
+    "32749220": {
+      "tags": [],
+      "name": "Rate",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "14"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749220"
+    },
+    "32749221": {
+      "tags": [],
+      "name": "Share",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "16"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749221"
+    },
+    "32749222": {
+      "data": {
+        "addressu": "clamp",
+        "addressv": "clamp",
+        "minfilter": "nearest_mip_nearest",
+        "magfilter": "nearest",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": false,
+        "frames": {
+          "1": {
+            "name": "Background",
+            "rect": [
+              0,
+              0,
+              144,
+              256
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "2": {
+            "name": "Ground 0",
+            "rect": [
+              146,
+              200,
+              154,
+              56
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "3": {
+            "name": "Scoreboard",
+            "rect": [
+              146,
+              140,
+              113,
+              58
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "4": {
+            "name": "Flappy Bird",
+            "rect": [
+              146,
+              61,
+              96,
+              22
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "5": {
+            "name": "Game Over",
+            "rect": [
+              146,
+              38,
+              94,
+              19
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "6": {
+            "name": "Get Ready",
+            "rect": [
+              146,
+              13,
+              87,
+              22
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "7": {
+            "name": "New",
+            "rect": [
+              146,
+              4,
+              16,
+              7
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "8": {
+            "name": "Big 6",
+            "rect": [
+              165,
+              1,
+              7,
+              10
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "9": {
+            "name": "Big 7",
+            "rect": [
+              175,
+              1,
+              7,
+              10
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "10": {
+            "name": "Big 8",
+            "rect": [
+              185,
+              1,
+              7,
+              10
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "11": {
+            "name": "Big 9",
+            "rect": [
+              195,
+              1,
+              7,
+              10
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "12": {
+            "name": "Menu",
+            "rect": [
+              246,
+              124,
+              40,
+              14
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "13": {
+            "name": "OK",
+            "rect": [
+              246,
+              108,
+              40,
+              14
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "14": {
+            "name": "Rate",
+            "rect": [
+              246,
+              92,
+              40,
+              14
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "15": {
+            "name": "Score",
+            "rect": [
+              244,
+              69,
+              40,
+              14
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "16": {
+            "name": "Share",
+            "rect": [
+              242,
+              45,
+              40,
+              14
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "17": {
+            "name": "Start",
+            "rect": [
+              242,
+              29,
+              40,
+              14
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "18": {
+            "name": "Pause",
+            "rect": [
+              287,
+              184,
+              13,
+              14
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "19": {
+            "name": "Play",
+            "rect": [
+              287,
+              158,
+              13,
+              14
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "20": {
+            "name": "Big 0",
+            "rect": [
+              288,
+              146,
+              7,
+              10
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "21": {
+            "name": "Big 1",
+            "rect": [
+              291,
+              128,
+              5,
+              10
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "22": {
+            "name": "Big 2",
+            "rect": [
+              289,
+              112,
+              7,
+              10
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "23": {
+            "name": "Big 3",
+            "rect": [
+              289,
+              96,
+              7,
+              10
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "24": {
+            "name": "Big 4",
+            "rect": [
+              287,
+              73,
+              7,
+              10
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "25": {
+            "name": "Big 5",
+            "rect": [
+              287,
+              61,
+              7,
+              10
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "26": {
+            "name": "Bird 0",
+            "rect": [
+              264,
+              180,
+              17,
+              12
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "27": {
+            "name": "Bird 1",
+            "rect": [
+              264,
+              154,
+              17,
+              12
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "28": {
+            "name": "Bird 2",
+            "rect": [
+              223,
+              120,
+              17,
+              12
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "29": {
+            "name": "Pipe Down",
+            "rect": [
+              302,
+              121,
+              26,
+              135
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "30": {
+            "name": "Pipe Up",
+            "rect": [
+              330,
+              135,
+              26,
+              121
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "31": {
+            "name": "Instructions",
+            "rect": [
+              152,
+              85,
+              59,
+              49
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "32": {
+            "name": "Medal Bronze",
+            "rect": [
+              302,
+              97,
+              22,
+              22
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "33": {
+            "name": "Medal Silver",
+            "rect": [
+              266,
+              5,
+              22,
+              22
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "34": {
+            "name": "Medal Gold",
+            "rect": [
+              242,
+              5,
+              22,
+              22
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "35": {
+            "name": "Medal Platinum",
+            "rect": [
+              220,
+              90,
+              22,
+              22
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "36": {
+            "name": "Black",
+            "rect": [
+              302,
+              79,
+              16,
+              16
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "37": {
+            "name": "White",
+            "rect": [
+              302,
+              61,
+              16,
+              16
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "38": {
+            "name": "Gears",
+            "rect": [
+              358,
+              249,
+              95,
+              7
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "39": {
+            "name": "Sparkle 1",
+            "rect": [
+              295,
+              177,
+              5,
+              5
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "40": {
+            "name": "Sparkle 2",
+            "rect": [
+              261,
+              141,
+              5,
+              5
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "41": {
+            "name": "Sparkle 3",
+            "rect": [
+              268,
+              141,
+              5,
+              5
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "52": {
+            "name": "Sparkle 0",
+            "rect": [
+              275,
+              141,
+              5,
+              5
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "53": {
+            "name": "Frame 53",
+            "rect": [
+              290,
+              100,
+              109,
+              24
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "file": {
+        "filename": "spritesheet.png",
+        "hash": "7beb41056e82fe0227883519c78a6e89",
+        "size": 5030,
+        "url": "assets/files/assets/32749222/1/spritesheet.png"
+      },
+      "meta": {
+        "format": "png",
+        "type": "PaletteAlpha",
+        "width": 453,
+        "height": 256,
+        "alpha": true,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false,
+        "compress": {
+          "alpha": true,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": true,
+          "normals": true,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        }
+      },
+      "name": "spritesheet.png",
+      "preload": true,
+      "region": "eu-west-1",
+      "revision": 1,
+      "tags": [],
+      "type": "textureatlas",
+      "i18n": {},
+      "id": "32749222"
+    },
+    "32749223": {
+      "tags": [],
+      "name": "Big 6",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "8"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749223"
+    },
+    "32749224": {
+      "tags": [],
+      "name": "Ground",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "2",
+          "53",
+          "54",
+          "55",
+          "56",
+          "57",
+          "58"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749224"
+    },
+    "32749225": {
+      "data": {
+        "scripts": {
+          "addToScore": {
+            "attributesOrder": [
+              "bird"
+            ],
+            "attributes": {
+              "bird": {
+                "type": "entity"
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "meta": null,
+      "name": "add-to-score.js",
+      "preload": true,
+      "region": "eu-west-1",
+      "revision": 1,
+      "tags": [],
+      "type": "script",
+      "i18n": {},
+      "id": "32749225"
+    },
+    "32749226": {
+      "tags": [],
+      "name": "Big 8",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "10"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749226"
+    },
+    "32749227": {
+      "tags": [],
+      "name": "Big 9",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "11"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749227"
+    },
+    "32749228": {
+      "tags": [],
+      "name": "Play",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "19"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749228"
+    },
+    "32749229": {
+      "tags": [],
+      "name": "Game Over",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "5"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749229"
+    },
+    "32749230": {
+      "tags": [],
+      "name": "Pause",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "18"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749230"
+    },
+    "32749231": {
+      "tags": [],
+      "name": "camera-aspect.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "cameraAspect": {
+            "attributesOrder": [],
+            "attributes": {}
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749231"
+    },
+    "32749232": {
+      "tags": [],
+      "name": "Default-Portrait@2x~ipad",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "1"
+        ],
+        "textureAtlasAsset": 32749260,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749232"
+    },
+    "32749233": {
+      "tags": [],
+      "name": "Bird",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "26",
+          "27",
+          "28",
+          "27"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749233"
+    },
+    "32749234": {
+      "tags": [],
+      "name": "Pipe Down",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "29"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749234"
+    },
+    "32749235": {
+      "tags": [],
+      "name": "Big 4",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "24"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749235"
+    },
+    "32749236": {
+      "tags": [],
+      "name": "Big 7",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "9"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749236"
+    },
+    "32749237": {
+      "tags": [],
+      "name": "Big 3",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "23"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749237"
+    },
+    "32749238": {
+      "tags": [],
+      "name": "New",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "7"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749238"
+    },
+    "32749239": {
+      "tags": [],
+      "name": "OK",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "13"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749239"
+    },
+    "32749240": {
+      "tags": [],
+      "name": "Get Ready",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "6"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749240"
+    },
+    "32749241": {
+      "tags": [],
+      "name": "Black",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "36"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749241"
+    },
+    "32749243": {
+      "tags": [],
+      "name": "Medal Platinum",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "35"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749243"
+    },
+    "32749244": {
+      "tags": [],
+      "name": "sparkle.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "sparkle": {
+            "attributesOrder": [
+              "radius"
+            ],
+            "attributes": {
+              "radius": {
+                "type": "number",
+                "default": 1
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749244"
+    },
+    "32749245": {
+      "tags": [],
+      "name": "bird.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "bird": {
+            "attributesOrder": [
+              "flapVelocity",
+              "gravity",
+              "lowestHeight",
+              "radius"
+            ],
+            "attributes": {
+              "flapVelocity": {
+                "type": "number",
+                "default": 1
+              },
+              "gravity": {
+                "type": "number",
+                "default": 5
+              },
+              "lowestHeight": {
+                "type": "number",
+                "default": -0.25
+              },
+              "radius": {
+                "type": "number",
+                "default": 0.068
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749245"
+    },
+    "32749246": {
+      "tags": [],
+      "name": "Score",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "15"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749246"
+    },
+    "32749247": {
+      "tags": [],
+      "name": "White",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "37"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749247"
+    },
+    "32749248": {
+      "tags": [],
+      "name": "New Material",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "ambient": [
+          0,
+          0,
+          0
+        ],
+        "ambientTint": false,
+        "aoMap": null,
+        "aoMapChannel": "r",
+        "aoMapUv": 0,
+        "aoMapTiling": [
+          1,
+          1
+        ],
+        "aoMapOffset": [
+          0,
+          0
+        ],
+        "diffuse": [
+          1,
+          1,
+          1
+        ],
+        "diffuseMap": null,
+        "diffuseMapChannel": "rgb",
+        "diffuseMapUv": 0,
+        "diffuseMapTiling": [
+          1,
+          1
+        ],
+        "diffuseMapOffset": [
+          0,
+          0
+        ],
+        "specular": [
+          0.23,
+          0.23,
+          0.23
+        ],
+        "specularMap": null,
+        "specularMapChannel": "rgb",
+        "specularMapUv": 0,
+        "specularMapTiling": [
+          1,
+          1
+        ],
+        "specularMapOffset": [
+          0,
+          0
+        ],
+        "specularAntialias": true,
+        "occludeSpecular": 1,
+        "useMetalness": false,
+        "metalness": 1,
+        "metalnessMap": null,
+        "metalnessMapChannel": "r",
+        "metalnessMapUv": 0,
+        "metalnessMapTiling": [
+          1,
+          1
+        ],
+        "metalnessMapOffset": [
+          0,
+          0
+        ],
+        "conserveEnergy": true,
+        "shininess": 32,
+        "glossMap": null,
+        "glossMapChannel": "r",
+        "glossMapUv": 0,
+        "glossMapTiling": [
+          1,
+          1
+        ],
+        "glossMapOffset": [
+          0,
+          0
+        ],
+        "fresnelModel": 0,
+        "emissive": [
+          0,
+          0,
+          0
+        ],
+        "emissiveMap": 32749267,
+        "emissiveMapChannel": "rgb",
+        "emissiveMapUv": 0,
+        "emissiveMapTiling": [
+          1,
+          1
+        ],
+        "emissiveMapOffset": [
+          0,
+          0
+        ],
+        "emissiveIntensity": 0,
+        "normalMap": null,
+        "normalMapTiling": [
+          1,
+          1
+        ],
+        "normalMapOffset": [
+          0,
+          0
+        ],
+        "normalMapUv": 0,
+        "bumpMapFactor": 1,
+        "heightMap": null,
+        "heightMapChannel": "r",
+        "heightMapUv": 0,
+        "heightMapTiling": [
+          1,
+          1
+        ],
+        "heightMapOffset": [
+          0,
+          0
+        ],
+        "heightMapFactor": 1,
+        "alphaToCoverage": false,
+        "alphaTest": 0,
+        "opacity": 1,
+        "opacityMap": null,
+        "opacityMapChannel": "r",
+        "opacityMapUv": 0,
+        "opacityMapTiling": [
+          1,
+          1
+        ],
+        "opacityMapOffset": [
+          0,
+          0
+        ],
+        "reflectivity": 1,
+        "refraction": 0,
+        "refractionIndex": 0.6666666666666666,
+        "sphereMap": null,
+        "cubeMap": null,
+        "cubeMapProjection": 0,
+        "cubeMapProjectionBox": {
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "halfExtents": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "lightMap": null,
+        "lightMapChannel": "rgb",
+        "lightMapUv": 1,
+        "lightMapTiling": [
+          1,
+          1
+        ],
+        "lightMapOffset": [
+          0,
+          0
+        ],
+        "depthTest": true,
+        "depthWrite": true,
+        "cull": 1,
+        "blendType": 3,
+        "shader": "blinn",
+        "useFog": true,
+        "useLighting": true,
+        "useSkybox": true,
+        "useGammaTonemap": true,
+        "aoMapVertexColor": false,
+        "diffuseMapVertexColor": false,
+        "emissiveMapVertexColor": false,
+        "specularMapVertexColor": false,
+        "metalnessMapVertexColor": false,
+        "opacityMapVertexColor": false,
+        "glossMapVertexColor": false,
+        "lightMapVertexColor": false,
+        "diffuseMapTint": false,
+        "specularMapTint": false,
+        "emissiveMapTint": false,
+        "metalnessMapTint": false,
+        "opacityFadesSpecular": true,
+        "alphaFade": 1,
+        "clearCoat": 0,
+        "clearCoatMap": null,
+        "clearCoatMapChannel": "r",
+        "clearCoatMapUv": 0,
+        "clearCoatMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatMapOffset": [
+          0,
+          0
+        ],
+        "clearCoatVertexColor": false,
+        "clearCoatVertexColorChannel": "r",
+        "clearCoatGlossiness": 1,
+        "clearCoatGlossMap": null,
+        "clearCoatGlossMapChannel": "r",
+        "clearCoatGlossMapUv": 0,
+        "clearCoatGlossMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatGlossMapOffset": [
+          0,
+          0
+        ],
+        "clearCoatGlossVertexColor": false,
+        "clearCoatGlossVertexColorChannel": "r",
+        "clearCoatBumpiness": 1,
+        "clearCoatNormalMap": null,
+        "clearCoatNormalMapUv": 0,
+        "clearCoatNormalMapTiling": [
+          1,
+          1
+        ],
+        "clearCoatNormalMapOffset": [
+          0,
+          0
+        ]
+      },
+      "type": "material",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749248"
+    },
+    "32749249": {
+      "tags": [],
+      "name": "sine2.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "sine2": {
+            "attributesOrder": [
+              "amplitudeScale",
+              "frequencyScale"
+            ],
+            "attributes": {
+              "amplitudeScale": {
+                "type": "number",
+                "default": 1
+              },
+              "frequencyScale": {
+                "type": "number",
+                "default": 1
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749249"
+    },
+    "32749250": {
+      "tags": [],
+      "name": "Medal Bronze",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "32"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749250"
+    },
+    "32749251": {
+      "tags": [],
+      "name": "Sparkle",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "52",
+          "39",
+          "40",
+          "41",
+          "40",
+          "39"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749251"
+    },
+    "32749252": {
+      "data": null,
+      "file": {
+        "filename": "sfx_point.mp3",
+        "size": 9344,
+        "hash": "b8f4767af8ebab5f55470ab1b8591c8d",
+        "url": "assets/files/assets/32749252/1/sfx_point.mp3"
+      },
+      "meta": null,
+      "name": "sfx_point.mp3",
+      "preload": false,
+      "region": "eu-west-1",
+      "revision": 1,
+      "tags": [],
+      "type": "audio",
+      "i18n": {},
+      "id": "32749252"
+    },
+    "32749253": {
+      "data": null,
+      "file": {
+        "filename": "sfx_wing.mp3",
+        "size": 3152,
+        "hash": "de4d3092adc2a810239855aef89a66a9",
+        "url": "assets/files/assets/32749253/1/sfx_wing.mp3"
+      },
+      "meta": null,
+      "name": "sfx_wing.mp3",
+      "preload": false,
+      "region": "eu-west-1",
+      "revision": 1,
+      "tags": [],
+      "type": "audio",
+      "i18n": {},
+      "id": "32749253"
+    },
+    "32749254": {
+      "tags": [],
+      "name": "game.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "game": {
+            "attributesOrder": [],
+            "attributes": {}
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749254"
+    },
+    "32749255": {
+      "tags": [],
+      "name": "Big 1",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "21"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749255"
+    },
+    "32749257": {
+      "tags": [],
+      "name": "score.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "score": {
+            "attributesOrder": [
+              "name",
+              "display",
+              "numbers"
+            ],
+            "attributes": {
+              "name": {
+                "type": "string",
+                "default": "score"
+              },
+              "numbers": {
+                "type": "asset",
+                "assetType": "sprite",
+                "array": true
+              },
+              "display": {
+                "type": "entity",
+                "array": true
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749257"
+    },
+    "32749258": {
+      "tags": [],
+      "name": "Pipe Up",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "30"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749258"
+    },
+    "32749259": {
+      "tags": [],
+      "name": "disable-context-menu.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {},
+        "loadingType": 0,
+        "loading": false
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749259"
+    },
+    "32749260": {
+      "tags": [],
+      "name": "Default-Portrait@2x~ipad.png",
+      "revision": 1,
+      "preload": true,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "normals": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Palette",
+        "width": 2048,
+        "height": 2048,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true,
+        "frames": {
+          "1": {
+            "name": "GEARS",
+            "rect": [
+              0,
+              0,
+              2048,
+              2048
+            ],
+            "pivot": [
+              0.5,
+              0.5
+            ],
+            "border": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "type": "textureatlas",
+      "file": {
+        "filename": "Default-Portrait@2x~ipad.png",
+        "hash": "40b98fa3725014f24011554825c197c7",
+        "size": 16921,
+        "variants": {},
+        "url": "assets/files/assets/32749260/1/Default-Portrait%402x~ipad.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749260"
+    },
+    "32749261": {
+      "tags": [],
+      "name": "Menu",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "12"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749261"
+    },
+    "32749262": {
+      "tags": [],
+      "name": "Tween.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {},
+        "loadingType": 0,
+        "loading": false
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749262"
+    },
+    "32749263": {
+      "tags": [],
+      "name": "FPS.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "order": 100,
+        "scripts": {
+          "limitFps": {
+            "attributesOrder": [
+              "targetFps"
+            ],
+            "attributes": {
+              "targetFps": {
+                "type": "number",
+                "default": 30
+              }
+            }
+          }
+        },
+        "loadingType": 0,
+        "loading": false
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749263"
+    },
+    "32749264": {
+      "tags": [],
+      "name": "tweener.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "tweener": {
+            "attributesOrder": [
+              "event",
+              "target",
+              "objectPath",
+              "property",
+              "to",
+              "duration",
+              "easingFunction",
+              "easingType",
+              "delay",
+              "repeat",
+              "repeatDelay",
+              "yoyo",
+              "startPos",
+              "endPos",
+              "startScale",
+              "endScale",
+              "startEvent",
+              "stopEvent",
+              "updateEvent",
+              "completeEvent",
+              "repeatEvent"
+            ],
+            "attributes": {
+              "event": {
+                "type": "string",
+                "title": "Event"
+              },
+              "duration": {
+                "type": "number",
+                "default": 1000,
+                "title": "Duration"
+              },
+              "startPos": {
+                "type": "vec3",
+                "default": [
+                  0,
+                  0,
+                  0
+                ],
+                "title": "Start Pos"
+              },
+              "endPos": {
+                "type": "vec3",
+                "default": [
+                  0,
+                  0,
+                  0
+                ],
+                "title": "End Pos"
+              },
+              "startScale": {
+                "type": "vec3",
+                "default": [
+                  1,
+                  1,
+                  1
+                ],
+                "title": "Start Scale"
+              },
+              "endScale": {
+                "type": "vec3",
+                "default": [
+                  1,
+                  1,
+                  1
+                ],
+                "title": "End Scale"
+              },
+              "delay": {
+                "type": "number",
+                "default": 0,
+                "title": "Delay"
+              },
+              "repeat": {
+                "type": "number",
+                "default": 0,
+                "title": "Repeat"
+              },
+              "yoyo": {
+                "type": "boolean",
+                "default": false,
+                "title": "Yoyo"
+              },
+              "repeatDelay": {
+                "type": "number",
+                "default": 0,
+                "title": "Repeat Delay"
+              },
+              "easingFunction": {
+                "title": "Easing Function",
+                "type": "number",
+                "enum": {
+                  "order": [
+                    "Linear",
+                    "Quadratic",
+                    "Cubic",
+                    "Quartic",
+                    "Quintic",
+                    "Sinusoidal",
+                    "Exponential",
+                    "Circular",
+                    "Elastic",
+                    "Back",
+                    "Bounce"
+                  ],
+                  "options": {
+                    "Linear": 0,
+                    "Quadratic": 1,
+                    "Cubic": 2,
+                    "Quartic": 3,
+                    "Quintic": 4,
+                    "Sinusoidal": 5,
+                    "Exponential": 6,
+                    "Circular": 7,
+                    "Elastic": 8,
+                    "Back": 9,
+                    "Bounce": 10
+                  }
+                }
+              },
+              "easingType": {
+                "title": "Easing Type",
+                "type": "number",
+                "enum": {
+                  "order": [
+                    "In",
+                    "Out",
+                    "InOut"
+                  ],
+                  "options": {
+                    "In": 0,
+                    "Out": 1,
+                    "InOut": 2
+                  }
+                }
+              },
+              "startEvent": {
+                "title": "Start Event",
+                "type": "string"
+              },
+              "stopEvent": {
+                "title": "Stop Event",
+                "type": "string"
+              },
+              "updateEvent": {
+                "title": "Update Event",
+                "type": "string"
+              },
+              "completeEvent": {
+                "title": "Complete Event",
+                "type": "string"
+              },
+              "repeatEvent": {
+                "title": "Repeat Event",
+                "type": "string"
+              },
+              "target": {
+                "title": "Target Entity",
+                "type": "entity"
+              },
+              "objectPath": {
+                "title": "Object Path",
+                "type": "string"
+              },
+              "property": {
+                "title": "Property",
+                "type": "string"
+              },
+              "to": {
+                "title": "To",
+                "type": "vec4",
+                "default": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749264"
+    },
+    "32749265": {
+      "tags": [],
+      "name": "Start",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "17"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749265"
+    },
+    "32749266": {
+      "data": null,
+      "file": {
+        "filename": "sfx_swooshing.mp3",
+        "size": 13440,
+        "hash": "ea4d4908664ac5f8c0a9f23a20351d85",
+        "url": "assets/files/assets/32749266/1/sfx_swooshing.mp3"
+      },
+      "meta": null,
+      "name": "sfx_swooshing.mp3",
+      "preload": false,
+      "region": "eu-west-1",
+      "revision": 1,
+      "tags": [],
+      "type": "audio",
+      "i18n": {},
+      "id": "32749266"
+    },
+    "32749267": {
+      "tags": [],
+      "name": "Default-Portrait@2x~ipad.png",
+      "revision": 1,
+      "preload": true,
+      "meta": {
+        "compress": {
+          "alpha": false,
+          "dxt": false,
+          "pvr": false,
+          "pvrBpp": 4,
+          "etc1": false,
+          "etc2": false,
+          "normals": false,
+          "basis": false,
+          "quality": 128,
+          "compressionMode": "etc"
+        },
+        "format": "png",
+        "type": "Palette",
+        "width": 2048,
+        "height": 2048,
+        "alpha": false,
+        "depth": 8,
+        "srgb": true,
+        "interlaced": false
+      },
+      "data": {
+        "addressu": "repeat",
+        "addressv": "repeat",
+        "minfilter": "linear_mip_linear",
+        "magfilter": "linear",
+        "anisotropy": 1,
+        "rgbm": false,
+        "mipmaps": true
+      },
+      "type": "texture",
+      "file": {
+        "filename": "Default-Portrait@2x~ipad.png",
+        "hash": "d3fcd7d41f53fbf5039106d4204e1030",
+        "size": 16921,
+        "variants": {},
+        "url": "assets/files/assets/32749267/1/Default-Portrait%402x~ipad.png"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749267"
+    },
+    "32749268": {
+      "tags": [],
+      "name": "Instructions",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "31"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749268"
+    },
+    "32749270": {
+      "tags": [],
+      "name": "fade2.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "fade2": {
+            "attributesOrder": [
+              "event",
+              "type",
+              "duration",
+              "delay"
+            ],
+            "attributes": {
+              "event": {
+                "type": "string"
+              },
+              "type": {
+                "type": "number",
+                "enum": {
+                  "order": [
+                    "In",
+                    "Out",
+                    "InOut"
+                  ],
+                  "options": {
+                    "In": 0,
+                    "Out": 1,
+                    "InOut": 2
+                  }
+                }
+              },
+              "duration": {
+                "type": "number",
+                "default": 1000
+              },
+              "delay": {
+                "type": "number",
+                "default": 0
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749270"
+    },
+    "32749271": {
+      "tags": [],
+      "name": "New Html",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": null,
+      "type": "html",
+      "file": {
+        "filename": "New Html.html",
+        "size": 1,
+        "hash": "68b329da9893e34099c7d8ad5cb9c940",
+        "url": "assets/files/assets/32749271/1/New%20Html.html"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749271"
+    },
+    "32749272": {
+      "tags": [],
+      "name": "scoreboard.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "scoreboard": {
+            "attributesOrder": [],
+            "attributes": {}
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749272"
+    },
+    "32749273": {
+      "data": null,
+      "file": {
+        "filename": "sfx_die.mp3",
+        "size": 12791,
+        "hash": "5f81410a16b3a26fbd1aa71966fc9bf2",
+        "url": "assets/files/assets/32749273/1/sfx_die.mp3"
+      },
+      "meta": null,
+      "name": "sfx_die.mp3",
+      "preload": false,
+      "region": "eu-west-1",
+      "revision": 1,
+      "tags": [],
+      "type": "audio",
+      "i18n": {},
+      "id": "32749273"
+    },
+    "32749274": {
+      "tags": [],
+      "name": "scroll.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "scroll": {
+            "attributesOrder": [
+              "startEvent",
+              "stopEvent",
+              "resetEvent",
+              "cycleEvent",
+              "startX",
+              "endX",
+              "speed",
+              "frozen"
+            ],
+            "attributes": {
+              "startEvent": {
+                "type": "string",
+                "default": "start"
+              },
+              "stopEvent": {
+                "type": "string",
+                "default": "stop"
+              },
+              "resetEvent": {
+                "type": "string",
+                "default": "reset"
+              },
+              "cycleEvent": {
+                "type": "string",
+                "default": "cycle"
+              },
+              "startX": {
+                "type": "number",
+                "default": 1
+              },
+              "endX": {
+                "type": "number",
+                "default": -1
+              },
+              "speed": {
+                "type": "number",
+                "default": 1
+              },
+              "frozen": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749274"
+    },
+    "32749275": {
+      "tags": [],
+      "name": "Flappy Bird",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "4"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749275"
+    },
+    "32749276": {
+      "tags": [],
+      "name": "sine.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "sine": {
+            "attributesOrder": [
+              "amplitudeScale",
+              "frequencyScale"
+            ],
+            "attributes": {
+              "amplitudeScale": {
+                "type": "number",
+                "default": 1
+              },
+              "frequencyScale": {
+                "type": "number",
+                "default": 1
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749276"
+    },
+    "32749277": {
+      "tags": [],
+      "name": "silence.mp3",
+      "revision": 1,
+      "preload": false,
+      "meta": null,
+      "data": null,
+      "type": "audio",
+      "file": {
+        "filename": "silence.mp3",
+        "size": 162724,
+        "hash": "d988722a18737226ea5490c3fc4d8bfc",
+        "url": "assets/files/assets/32749277/1/silence.mp3"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749277"
+    },
+    "32749278": {
+      "tags": [],
+      "name": "pipe-height.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "pipeHeight": {
+            "attributesOrder": [],
+            "attributes": {}
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749278"
+    },
+    "32749279": {
+      "tags": [],
+      "name": "Big 0",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "pixelsPerUnit": 100,
+        "frameKeys": [
+          "20"
+        ],
+        "textureAtlasAsset": 32749222,
+        "renderMode": 0
+      },
+      "type": "sprite",
+      "file": null,
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749279"
+    },
+    "32749280": {
+      "tags": [],
+      "name": "button.js",
+      "revision": 1,
+      "preload": true,
+      "meta": null,
+      "data": {
+        "scripts": {
+          "button": {
+            "attributesOrder": [
+              "diplacement",
+              "event"
+            ],
+            "attributes": {
+              "diplacement": {
+                "type": "number",
+                "default": 0.00390625
+              },
+              "event": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "loading": false,
+        "loadingType": 0
+      },
+      "type": "script",
+      "file": {
+        "filename": "__game-scripts.js",
+        "size": 30210,
+        "hash": "cccd3a929c183539f6cdcdfac13c5e3b",
+        "url": "assets/__game-scripts.js"
+      },
+      "region": "eu-west-1",
+      "i18n": {},
+      "id": "32749280"
+    }
+  }
+}
